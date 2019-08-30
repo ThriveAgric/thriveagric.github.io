@@ -53,16 +53,72 @@
                   target.classList.toggle(className);
                 };
               }
-            });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Authentication</h1></header><article><div><span><p>You can authenticate your API calls by including your secret key in the Authorization header of every request you make.</p>
-<blockquote>
-<p>Do ensure that you do not commit your secret keys to git, or use them in your client-end code</p>
-</blockquote>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="sample-authorization-header"></a><a href="#sample-authorization-header" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample Authorization header</h2>
-<pre><code class="hljs css language-javascript">headers: {
-    <span class="hljs-attr">access_key</span>: "thr.live_bab.insrajjsje9vcea.bpeuaorbtuiek9olekhhrx4yvjplfju6jc2oj.2yjjsx"
+            });       
+</script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Authentication</h1></header><article><div><span><p>You can authenticate your API calls by including your secret key in the Authorization header of every request you make.</p>
+  <blockquote>
+  <p>Do ensure that you do not commit your secret keys to git, or use them in your client-end code</p>
+  </blockquote>
+  <p><br></p>
+  <h2><a class="anchor" aria-hidden="true" id="api-base-url"></a><a href="#api-base-url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API Base URL</h2>
+  <pre><code class="hljs css language-javascript"><span class="hljs-string">"https://api.sandboxthriveagric.live/api/v1"</span>;
+  </code></pre>
+  <p><br></p>
+  <h2><a class="anchor" aria-hidden="true" id="sample-authorization-header"></a><a href="#sample-authorization-header" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample Authorization header</h2>
+  <pre><code class="hljs css language-javascript">headers: {
+            <span class="hljs-attr">access_key</span>: "thr.live_bab.insrajjsje9vcea.bpeuaorbtuiek9olekhhrx4yvjplfju6jc2oj.2yjjsx"
+        }
+  </code></pre>
+  <p>Every API request made without authentication will fail with the status code of <code>401: Unauthorized User!</code></p>
+  <p><br></p>
+  <h2><a class="anchor" aria-hidden="true" id="test-endpoint"></a><a href="#test-endpoint" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test Endpoint</h2>
+  <blockquote>
+  <p><strong>/test</strong></p>
+  </blockquote>
+  <p><strong>Description:</strong>  <br>
+  This is used to test the availability of the entire microservice. Hit here if you think the server is down.</p>
+  <p><strong>Action:</strong>  <br>
+  Make a url request to endpoint.</p>
+  <p><strong>API response:</strong></p>
+  <pre><code class="hljs">{ <span class="hljs-string">"message"</span> : "<span class="hljs-type">API</span> <span class="hljs-keyword">is</span> up <span class="hljs-keyword">and</span> A OK ✅<span class="hljs-string">" }
+  </span></code></pre>
+  <p><br></p>
+  <h2><a class="anchor" aria-hidden="true" id="register-new-partner"></a><a href="#register-new-partner" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Register New Partner</h2>
+  <blockquote>
+  <p><strong>POST</strong> /partners/onboarding</p>
+  </blockquote>
+  <p><strong>Description:</strong>  <br>
+  Partner Companies are to use this endpoint to register and get their API key.</p>
+  <p><strong>Parameters:</strong></p>
+  <pre><code class="hljs">    Request body:
+          -first_name: partne<span class="hljs-string">r's first name
+
+          -last_name: partner'</span>s last name
+
+          -business_name:  partne<span class="hljs-string">r's official business name
+
+          -position: "developer"
+
+          -api_usage: "Display on our platform for subscribers to invest"
+
+          -email: partner'</span>s email where API key should be delivered to
+  </code></pre>
+  <p><strong>API response:</strong></p>
+  <pre><code class="hljs css language-javascript">{<span class="hljs-string">"message"</span>: <span class="hljs-string">"Partner created. Details plus API access key has been sent to your email"</span>}
+  </code></pre>
+  <p><br></p>
+  <h2><a class="anchor" aria-hidden="true" id="request-api-access-key"></a><a href="#request-api-access-key" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Request API Access key</h2>
+  <blockquote>
+  <p><strong>POST</strong> /partners/key</p>
+  </blockquote>
+  <p><strong>Description:</strong>  <br>
+  Should a Partner lose their API key, a request to this endpoint should be made to retrieve their API key.</p>
+  <p><strong>Parameters:</strong></p>
+  <pre><code class="hljs">    Request <span class="hljs-keyword">body</span>:
+          -email: partner<span class="hljs-symbol">'s</span> email
+  </code></pre>
+  <p><strong>API response:</strong></p>
+  <pre><code class="hljs css language-javascript">{
+    <span class="hljs-attr">message</span>: <span class="hljs-string">"API access key sent to email."</span>;
 }
-</code></pre>
-<p>Every API request made without authentication will fail with the status code of <code>401: Unauthorized User!</code></p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="how-to-start.html"><span class="arrow-prev">← </span><span>How to Start</span></a><a class="docs-next button" href="errors.html"><span>Errors</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#sample-authorization-header">Sample Authorization header</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="text-align:center"><div><h5>Docs</h5><a href="introduction.html">Getting Started</a><a href="how-to-start.html">Guides</a><a href="farm.html">API Reference</a></div><div style="text-align:center"><h5>More</h5><a href="https://medium.com/@thriveagric">Blog</a><a href="https://twitter.com/thriveagric" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://github.com/ThriveAgric/farm-api">GitHub</a><a class="github-button" href="https://github.com/ThriveAgric/farms-api" data-icon="octicon-star" data-count-href="/ThriveAgric/farm-api" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright" style="text-align:center"><span><a href="/farms-api/" class="nav-home"><img src="../img/thrive.png" alt="Thrive Agric" width="66" height="58"/></a></span><div>Copyright © 2019 Thrive Agric</div></section></footer></div></body></html>
+  </code></pre>
+  </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="how-to-start.html"><span class="arrow-prev">← </span><span>How to Start</span></a><a class="docs-next button" href="errors.html"><span>Errors</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#api-base-url">API Base URL</a></li><li><a href="#sample-authorization-header">Sample Authorization header</a></li><li><a href="#test-endpoint">Test Endpoint</a></li><li><a href="#register-new-partner">Register New Partner</a></li><li><a href="#request-api-access-key">Request API Access key</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="text-align:center"><div><h5>Docs</h5><a href="introduction.html">Getting Started</a><a href="how-to-start.html">Guides</a><a href="farm.html">API Reference</a></div><div style="text-align:center"><h5>More</h5><a href="https://medium.com/@thriveagric" target="_blank">Blog</a><a href="https://twitter.com/thriveagric" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://github.com/ThriveAgric/farms-api">GitHub</a><a class="github-button" href="https://github.com/ThriveAgric/farms-api" data-icon="octicon-star" data-count-href="/ThriveAgric/farms-api" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright" style="text-align:center"><span><a href="../index.html" class="nav-home"><img src="../img/thrive.png" alt="Thrive Agric" width="66" height="58"/></a></span><div>Copyright © 2019 Thrive Agric</div></section></footer></div></body></html>
