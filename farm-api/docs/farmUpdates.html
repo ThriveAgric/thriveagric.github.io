@@ -58,42 +58,70 @@
 <pre><code class="hljs css language-javascript"><span class="hljs-string">"https://api.sandboxthriveagric.live/api/v1"</span>;
 </code></pre>
 <p><br></p>
-<h3><a class="anchor" aria-hidden="true" id="sample-farm-updates-schema"></a><a href="#sample-farm-updates-schema" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample Farm Updates Schema</h3>
+<h3><a class="anchor" aria-hidden="true" id="sample-farm-updates-schema"></a><a href="#sample-farm-updates-schema" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample Farm Updates Object Response</h3>
 <pre><code class="hljs css language-javascript">    {
-        <span class="hljs-attr">project</span>: {
-                    <span class="hljs-attr">"_id"</span>:  <span class="hljs-attr">"5cffae415ddd0a624c1bb015"</span>,
-                    <span class="hljs-attr">farm_id</span>: <span class="hljs-built_in">4</span>,
-                },
-
-        <span class="hljs-attr">images</span>: [
+    <span class="hljs-attribute">"status"</span>: <span class="hljs-attribute">"success",
+        <span class="hljs-attribute">"data"</span>: [
+            {
+                <span class="hljs-attribute">"meta"</span>: {
+                        "created_at": "2019-08-06T12</span>:<span class="hljs-attribute">04:22.904Z"</span>,
+                        "updated_at": "2019-08-06T12</span>:<span class="hljs-attribute">04:22.904Z"</span>
+                      },
+                <span class="hljs-attribute">"_id"</span>: <span class="hljs-attribute">"5d496cc679a14c0017856813"</span>,
+                <span class="hljs-attribute">"title"</span>: <span class="hljs-attribute">"Pest control  is ongoing"</span>,
+                <span class="hljs-attribute">"progress"</span>: <span class="hljs-attribute">44</span>,
+                <span class="hljs-attribute">"week_number"</span>: <span class="hljs-attribute">17</span>,
+                <span class="hljs-attribute">"activity"</span>: <span class="hljs-attribute">"Pest control and crop observation operation"</span>,
+                <span class="hljs-attribute">"stage"</span>: <span class="hljs-attribute">4</span>,
+                <span class="hljs-attribute">"report"</span>: <span class="hljs-attribute">"Pest control is currently ongoing. Pest control is a means of reducing the number of pests to an acceptable threshold. 
+                          Pest is any animal or plant detrimental to the crop. Pest could be weed, insects, humans, etc. "</span>,
+                <span class="hljs-attribute">"description": <span class="hljs-attribute">"Pest control in the field was achieved by monitoring the crop, not only applying insecticides when necessary but by 
+                                growing varieties of crops which are resistant to pests and  ensuring weeds are gotten rid of in time. 
+                                Insects, weeds and disease in maize crops can severely reduce yield and quality of the maize crop if not tackled immediately. 
+                                The farmers sprayed chemicals and manually weed the farm with hoe. The field agents and officers visited the farms to record the progress on the farm growth. 
+                                Effective reporting plan was designed for both the farmers and the officers in charge. This system was designed to drive productivity, 
+                                transparency and efficiency with farmers, officers and Thrive Agric. 
+                                Officers checked the farmers database to ensure all farmers are up to date with their agronomic calendar. 
+                                In cases where a particular farm data is missing from the database or not filled, 
+                                the officers go round the farmers farms having such issue to ensure the farmers are well informed on how to upload their data.
+                                The farms are doing great. Thanks to you for trusting and funding our beloved farmers in Africa."</span>,
+                <span class="hljs-attribute">"images"</span>: [
                     {
-                        <span class="hljs-attr">src</span>: <span class="hljs-built_in">String</span>,
-                        <span class="hljs-attr">title</span>: <span class="hljs-built_in">String</span>,
-                        <span class="hljs-attr">subtitle</span>: <span class="hljs-built_in">String</span>
+                        <span class="hljs-attribute">"_id"</span>: <span class="hljs-attribute">"5d496cc679a14c0017856818"</span>,
+                        <span class="hljs-attribute">"src"</span>: <span class="hljs-attribute">"https://thriveagric.ams3.cdn.digitaloceanspaces.com/farmUpdates/Thrive%20Agric%20Pictures/farm_updates_first_week_august/WhatsApp%20Image%202019-08-02%20at%2017.45.28.jpeg"</span>,
+                        <span class="hljs-attribute">"title"</span>: <span class="hljs-attribute">"Maize Farm"</span>,
+                        <span class="hljs-attribute">"subtitle"</span>: <span class="hljs-attribute">"Maize Farm Update"</span>
+                    },
+                    {
+                        <span class="hljs-attribute">"_id"</span>: <span class="hljs-attribute">"5d496cc679a14c0017856817",
+                        <span class="hljs-attribute">"src"</span>: <span class="hljs-attribute">"https://thriveagric.ams3.cdn.digitaloceanspaces.com/farmUpdates/Thrive%20Agric%20Pictures/farm_updates_first_week_august/WhatsApp%20Image%202019-08-02%20at%2017.45.29.jpeg"</span>,
+                        <span class="hljs-attribute">"title"</span>: <span class="hljs-attribute">"Maize Farm"</span>,
+                        <span class="hljs-attribute">"subtitle"</span>: <span class="hljs-attribute">"Maize Farm Update"</span>
+                    },
+                    {
+                        <span class="hljs-attribute">"_id"</span>: <span class="hljs-attribute">"5d496cc679a14c0017856816"</span>,
+                        <span class="hljs-attribute">"src"</span>: <span class="hljs-attribute">"https://thriveagric.ams3.cdn.digitaloceanspaces.com/farmUpdates/Thrive%20Agric%20Pictures/farm_updates_first_week_august/WhatsApp%20Image%202019-08-02%20at%2017.45.30.jpeg"</span>,
+                        <span class="hljs-attribute">"title"</span>: <span class="hljs-attribute">"Maize Farm"</span>,
+                        <span class="hljs-attribute">"subtitle"</span>: <span class="hljs-attribute">"Maize Farm Update"</span>
+                    },
+                    {
+                        <span class="hljs-attribute">"_id"</span>: <span class="hljs-attribute">"5d496cc679a14c0017856815"</span>,
+                        <span class="hljs-attribute">"src"</span>: <span class="hljs-attribute">"https://thriveagric.ams3.cdn.digitaloceanspaces.com/farmUpdates/Thrive%20Agric%20Pictures/farm_updates_first_week_august/WhatsApp%20Image%202019-08-02%20at%2017.45.31%20(1).jpeg"</span>,
+                        <span class="hljs-attribute">"title"</span>: <span class="hljs-attribute">"Maize Farm"</span>,
+                        <span class="hljs-attribute">"subtitle"</span>: <span class="hljs-attribute">"Maize Farm Update"</span>
+                    },
+                    {
+                        <span class="hljs-attribute">"_id"</span>: <span class="hljs-attribute">"5d496cc679a14c0017856814"</span>,
+                        <span class="hljs-attribute">"src"</span>: <span class="hljs-attribute">"https://thriveagric.ams3.cdn.digitaloceanspaces.com/farmUpdates/Thrive%20Agric%20Pictures/farm_updates_first_week_august/WhatsApp%20Image%202019-08-02%20at%2017.45.31.jpeg"</span>,
+                       <span class="hljs-attribute"> "title"</span>: <span class="hljs-attribute">"Maize Farm"</span>,
+                        <span class="hljs-attribute">"subtitle"</span>: <span class="hljs-attribute">"Maize Farm Update"</span>
                     }
                 ],
-
-        <span class="hljs-attr">videos</span>: [
-                    {
-                        <span class="hljs-attr">url</span>: <span class="hljs-built_in">String</span>,
-                        <span class="hljs-attr">info</span>: <span class="hljs-built_in">String</span>,
-                        <span class="hljs-attr">description</span>: <span class="hljs-built_in">String</span>
-                    }
-                ],
-
-                <span class="hljs-attr">title</span>: <span class="hljs-built_in">String</span>,
-                <span class="hljs-attr">progress</span>: <span class="hljs-built_in">Number</span>,
-                <span class="hljs-attr">week_number</span>: <span class="hljs-built_in">Number</span>,
-                <span class="hljs-attr">activity</span>: <span class="hljs-built_in">String</span>,
-                <span class="hljs-attr">stage</span>: <span class="hljs-built_in">Number</span>,
-                <span class="hljs-attr">report</span>: <span class="hljs-built_in">String</span>,
-                <span class="hljs-attr">description</span>: <span class="hljs-built_in">String</span>,
-                <span class="hljs-attr">created_at</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">Date</span>, <span class="hljs-attr">default</span>: <span class="hljs-built_in">Date</span>.now},
-
-                <span class="hljs-attr">meta</span>: {
-                            <span class="hljs-attr">created_at</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">Date</span>, <span class="hljs-attr">default</span>: <span class="hljs-built_in">Date</span>.now},
-                            <span class="hljs-attr">updated_at</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">Date</span>, <span class="hljs-attr">default</span>: <span class="hljs-built_in">Date</span>.now},
-                     }
+                <span class="hljs-attribute">"videos"</span>: <span class="hljs-attribute">[]</span>,
+                <span class="hljs-attribute">"projectId"</span>: <span class="hljs-attribute">"5cea6a2c1a74f7fa8f15d2a9"</span>,
+              
+            }
+        ]
     }
 
 </code></pre>
