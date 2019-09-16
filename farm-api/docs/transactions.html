@@ -154,12 +154,21 @@
 </blockquote>
 <p><strong>Description:</strong>
 This is used to save transactions made by Users through Partner platform.</p>
-<p><strong>Parameters:</strong></p>
+<p><strong>Parameters for a full unit of Farm:</strong></p>
 <pre><code class="hljs">Request parameter:
     -<span class="ruby">email (user mail)
 </span>    -<span class="ruby">projectId (project Id)
 </span>    -<span class="ruby">amount
 </span>    -<span class="ruby">farmUnits
+</span>    -<span class="ruby">dateCustomerPaid
+</span></code></pre> 
+
+<p><strong>Parameters for a (1/5) unit of a Farm:</strong></p>
+<pre><code class="hljs">Request parameter:
+    -<span class="ruby">email (user mail)
+</span>    -<span class="ruby">projectId (project Id)
+</span>    -<span class="ruby">amount
+</span>    -<span class="ruby">farmOneFifthUnits
 </span>    -<span class="ruby">dateCustomerPaid
 </span></code></pre>
 <p><strong>API Response:</strong></p>
