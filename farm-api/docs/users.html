@@ -54,8 +54,26 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">User Management Microservice</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="staging-base-url"></a><a href="#staging-base-url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API Base URL</h2>
+        </script></nav></div>
+<div class="container mainContainer"><div class="wrapper"><div class="post">
+  <header class="postHeader"><h1 class="postHeaderTitle">User Management Microservice</h1></header>
+  <article>
+    <div>
+    <span>
+    <h2>
+    <a class="anchor" aria-hidden="true" id="staging-base-url">
+    </a>
+   <a href="#staging-base-url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+  </path></svg></a>API Base URL (LIVE SERVER)</h2>
 <pre><code class="hljs css language-javascript"><span class="hljs-string">"https://api.sandboxthriveagric.live/api/v1"</span>;
+</code></pre>
+<!-- staging base url -->
+<h2>
+    <a class="anchor" aria-hidden="true" id="staging-base-url-test">
+    </a>
+   <a href="#staging-base-url-test" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+  </path></svg></a>TEST SERVER (NO SSL)</h2>
+<pre><code class="hljs css language-javascript"><span class="hljs-string">"http://staging.sandboxthriveagric.live/api/v1"</span>;
 </code></pre>
 <h2><a class="anchor" aria-hidden="true" id="sample-user-schema"></a><a href="#sample-user-schema" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample User Object Response</h2>
 <!-- DOCUSAURUS_CODE_TABS -->
@@ -121,6 +139,8 @@ This will query all users in the database.</p>
 <pre><code class="hljs">{status: “success”, result: <span class="hljs-meta">[&lt;Array of data from db&gt;]</span>}
 {status: “error”, message: “&lt;error message from db&gt;”}
 </code></pre>
+
+User Login
 <h2><a class="anchor" aria-hidden="true" id="user-login"></a><a href="#user-login" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User Login</h2>
 <blockquote>
 <p><strong>POST</strong>
@@ -152,6 +172,8 @@ This endpoint will enable users to log in.</p>
 
 
 </code></pre>
+
+Create User
 <h2><a class="anchor" aria-hidden="true" id="create-user"></a><a href="#create-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create User</h2>
 <blockquote>
 <p><strong>POST</strong>
@@ -187,6 +209,8 @@ This will enable creation of users into the database.</p>
 
 
 </code></pre>
+
+Verify User
 <h2><a class="anchor" aria-hidden="true" id="verify-user"></a><a href="#verify-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Verify User</h2>
 <blockquote>
 <p><strong>GET</strong>
@@ -211,6 +235,9 @@ PS: Look at (/NEW_VERIFY_TOKEN) endpoint below.</p>
   {<span class="hljs-attribute">status</span>: ‘failure’, message: ‘An error occurred during verification’}
 
 </code></pre>
+
+
+New Verification Token
 <h2><a class="anchor" aria-hidden="true" id="new-verification-token"></a><a href="#new-verification-token" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>New Verification Token</h2>
 <blockquote>
 <p><strong>POST</strong>
@@ -229,6 +256,9 @@ This endpoint generates a new verify token for a user and will send a mail to th
     {<span class="hljs-attribute">status</span>: ‘failure’, message: ‘&lt;Error message from server&gt;’}
 
 </code></pre>
+
+
+Forgot password
 <h2><a class="anchor" aria-hidden="true" id="forgot-password"></a><a href="#forgot-password" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Forgot password</h2>
 <blockquote>
 <p><strong>POST</strong>
@@ -247,6 +277,9 @@ This endpoint will cater for forgotten password and will send a mail to the user
     {<span class="hljs-attribute">status</span>: ‘failure’, message: ‘&lt;Error message from server&gt;’}
 
 </code></pre>
+
+
+Reset Password
 <h2><a class="anchor" aria-hidden="true" id="reset-password"></a><a href="#reset-password" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reset Password</h2>
 <p><strong>Description:</strong>
 Callback authenticated endpoint that will be used to replace existing password with new one.</p>
@@ -265,6 +298,8 @@ If success you show the user a success message and a link to login, else tell th
 <pre><code class="hljs">    {<span class="hljs-attribute">message</span>: ‘Password has been reset’}
     {<span class="hljs-attribute">status</span>: <span class="hljs-number">400</span>, message: ‘Password reset token is invalid or has expired’}
 </code></pre>
+
+Change User Password
 <h2><a class="anchor" aria-hidden="true" id="change-user-password"></a><a href="#change-user-password" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change User Password</h2>
 <blockquote>
 <p><strong>POST</strong>
@@ -289,6 +324,8 @@ Endpoint used to change a user password from their dashboard.</p>
 <pre><code class="hljs">    {<span class="hljs-attribute">message</span>: ‘Password change successful’}
     {<span class="hljs-attribute">status</span>: ‘error’, message: ‘&lt;error message returned&gt;’}
 </code></pre>
+
+Check Email
 <h2><a class="anchor" aria-hidden="true" id="check-email"></a><a href="#check-email" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check Email</h2>
 <blockquote>
 <p><strong>POST</strong>
@@ -307,25 +344,32 @@ Endpoint used to check availability of an email.</p>
 
     {status: ‘failure’, message: ‘Invalid Input’}
 </code></pre>
+
+
+<!-- Find One User -->
 <h2><a class="anchor" aria-hidden="true" id="find-one-user"></a><a href="#find-one-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Find One User</h2>
 <blockquote>
-<p><strong>GET</strong>
+<p><strong>POST</strong>
 /user/find</p>
 </blockquote>
 <p><strong>Description:</strong>
 This will query for a particular user in the database.</p>
 <p><strong>Parameters:</strong></p>
-<pre><code class="hljs">    <span class="hljs-selector-tag">Headers</span> <span class="hljs-selector-tag">parameter</span> :
+<pre><code class="hljs">Request parameter :
+    -email (<span class="hljs-keyword">user</span> <span class="hljs-title">email</span>)
+  <!-- <span class="hljs-selector-tag">Headers</span><span class="hljs-selector-tag">parameter</span> :
             <span class="hljs-selector-tag">-headers</span>:  {
                 <span class="hljs-attribute">access_token</span>: JWT &lt;access token&gt;
-            }
-
+            } -->
 </code></pre>
 <p><strong>API response:</strong></p>
-<pre><code class="hljs">        {<span class="hljs-attribute">status</span>: “success”, data: {&lt;JSON of farm created&gt;}}
+<pre><code class="hljs">        {<span class="hljs-attribute">status</span>: “success”, data: {&lt;JSON of user details&gt;}}
         {<span class="hljs-attribute">status</span>: “error”, message: “&lt;error message from db&gt;”}
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="update-user-details"></a><a href="#update-user-details" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update User Details</h2>
+
+
+<!-- Update User Details -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="update-user-details"></a><a href="#update-user-details" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update User Details</h2>
 <blockquote>
 <p><strong>PUT</strong>
 /user/update</p>
@@ -425,5 +469,22 @@ This endpoint starts logging user in via facebook login.</p>
 </span>
  Error: handle <span class="hljs-builtin-name">error</span> on<span class="hljs-built_in"> client
 </span>``` --&gt;
-</code></pre>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/farms-api/docs/farmUpdates"><span class="arrow-prev">← </span><span>Farm Updates</span></a><a class="docs-next button" href="/farms-api/docs/transactions"><span>Transactions</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#staging-base-url">Staging Base URL</a></li><li><a href="#sample-user-schema">Sample User Schema</a></li><li><a href="#test-endpoint">Test Endpoint</a></li><li><a href="#register-user">Register User</a></li><li><a href="#user-login">User Login</a></li><li><a href="#create-user">Create User</a></li><li><a href="#verify-user">Verify User</a></li><li><a href="#new-verification-token">New Verification Token</a></li><li><a href="#forgot-password">Forgot password</a></li><li><a href="#reset-password">Reset Password</a></li><li><a href="#change-user-password">Change User Password</a></li><li><a href="#check-email">Check Email</a></li><li><a href="#find-one-user">Find One User</a></li><li><a href="#update-user-details">Update User Details</a></li><li><a href="#update-user-bank">Update User Bank</a></li><li><a href="#user-check-session-validity">User Check Session Validity</a></li><li><a href="#initiate-google-oauth2">Initiate Google Oauth2</a></li><li><a href="#initiate-facebook-login">Initiate Facebook login</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="text-align:center"><div><h5>Docs</h5><a href="/farms-api/docs/en/introduction.html">Getting Started</a><a href="/farms-api/docs/en/how-to-start.html">Guides</a><a href="/farms-api/docs/en/farm.html">API Reference</a></div><div style="text-align:center"><h5>More</h5><a href="/farms-api/blog">Blog</a><a href="https://twitter.com/thriveagric" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://github.com/Prodigy00/farm-api">GitHub</a><a class="github-button" href="https://github.com/ThriveAgric/farms-api" data-icon="octicon-star" data-count-href="/Prodigy00/farm-api" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright" style="text-align:center"><span><a href="/farms-api/" class="nav-home"><img src="/farms-api/img/thrive.png" alt="Thrive Agric" width="66" height="58"/></a></span><div>Copyright © 2019 Thrive Agric</div></section></footer></div></body></html>
+</code></pre> -->
+
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="farmUpdates.html"><span class="arrow-prev">← </span><span>Farm Updates</span></a><a class="docs-next button" href="transactions.html"><span>Transactions</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#staging-base-url">Staging Base URL</a></li><li><a href="#sample-user-schema">Sample User Schema</a></li><li><a href="#test-endpoint">Test Endpoint</a></li>
+  <li><a href="#register-user">Register User</a></li>
+  <!-- <li><a href="#user-login">User Login</a></li>
+  <li><a href="#create-user">Create User</a></li>
+  <li><a href="#verify-user">Verify User</a></li>
+  <li><a href="#new-verification-token">New Verification Token</a></li>
+  <li><a href="#forgot-password">Forgot password</a></li>
+  <li><a href="#reset-password">Reset Password</a></li>
+  <li><a href="#change-user-password">Change User Password</a></li>
+  <li><a href="#check-email">Check Email</a></li> -->
+  <li><a href="#find-one-user">Find One User</a></li>
+  <!-- <li><a href="#update-user-details">Update User Details</a></li>
+  <li><a href="#update-user-bank">Update User Bank</a></li>
+  <li><a href="#user-check-session-validity">User Check Session Validity</a></li>
+  <li><a href="#initiate-google-oauth2">Initiate Google Oauth2</a></li> -->
+  <li><a href="#initiate-facebook-login"></a></li></ul></nav></div>
+  <footer class="nav-footer" id="footer"><section class="sitemap" style="text-align:center"><div><h5>Docs</h5><a href="introduction.html">Getting Started</a><a href="how-to-start.html">Guides</a><a href="farm.html">API Reference</a></div><div style="text-align:center"><h5>More</h5><a href="https://medium.com/@thriveagric">Blog</a><a href="https://twitter.com/thriveagric" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://github.com/ThriveAgric/farm-api">GitHub</a><a class="github-button" href="https://github.com/ThriveAgric/farm-api" data-icon="octicon-star" data-count-href="/ThriveAgric/farm-api" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright" style="text-align:center"><span><a href="../index.html" class="nav-home"><img src="../img/thrive.png" alt="Thrive Agric" width="66" height="58"/></a></span><div>Copyright © 2019 Thrive Agric</div></section></footer></div></body></html>

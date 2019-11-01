@@ -86,14 +86,20 @@
           <p>In this section, details about viewing available farms are shown. <br>You can either fund a whole unit of a farm, or one-fifth of a single unit of farm.</p>
           <span>
             <h2>
-              <a class="anchor" aria-hidden="true" id="staging-base-url"></a>
-              <a href="#staging-base-url" aria-hidden="true" class="hash-link">
-                <svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-                  <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-                </svg>
-              </a>API Base URL</h2>
-<pre><code class="hljs css language-javascript"><span class="hljs-string">"https://api.sandboxthriveagric.live/api/v1"</span>;
-</code></pre>
+                  <a class="anchor" aria-hidden="true" id="staging-base-url">
+                  </a>
+                 <a href="#staging-base-url" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                </path></svg></a>API Base URL (LIVE SERVER)</h2>
+              <pre><code class="hljs css language-javascript"><span class="hljs-string">"https://api.sandboxthriveagric.live/api/v1"</span>;
+              </code></pre>
+              <!-- staging base url -->
+              <h2>
+                  <a class="anchor" aria-hidden="true" id="staging-base-url-test">
+                  </a>
+                 <a href="#staging-base-url-test" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                </path></svg></a>TEST SERVER (NO SSL)</h2>
+              <pre><code class="hljs css language-javascript"><span class="hljs-string">"http://staging.sandboxthriveagric.live/api/v1"</span>;
+              </code></pre>
 
 <p><br></p>
 <h3><a class="anchor" aria-hidden="true" id="sample-farm-tracking-schema"></a><a href="#sample-farm-tracking-schema" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Structure of an Event Object</h3>
@@ -172,8 +178,8 @@ This is used to view all open farms(i.e. farms available to be funded)</p>
 
     {<span class="hljs-attr">status</span>: <span class="hljs-string">"error"</span>, <span class="hljs-attr">message</span>:<span class="hljs-string">"Could not fetch available farms at this time"</span>}
 </code></pre>
-<!-- ## View All Farms (UNAUTHORIZED USERS)
-<h3><a class="anchor" aria-hidden="true" id="endpoint"></a><a href="#endpoint" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
+<!-- <!-- ## View All Farms (UNAUTHORIZED USERS) -->
+<!-- <h3><a class="anchor" aria-hidden="true" id="endpoint"></a><a href="#endpoint" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs">/<span class="hljs-keyword">all</span>
 </code></pre>
 <p><strong>Method Type</strong></p>
@@ -189,11 +195,14 @@ This will query all farms created</p>
     {status: ‘failure’, message: ‘error message from server’}
 
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="view-all-farms-authorized-users"></a><a href="#view-all-farms-authorized-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View All Farms (AUTHORIZED USERS)</h2>
+<p><br></p> -->
+
+<!-- View all farms(open and closed) -->
+<h2><a class="anchor" aria-hidden="true" id="view-all-farms-authorized-users"></a><a href="#view-all-farms-authorized-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View All Farms (OPEN AND CLOSED)</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-1"></a><a href="#endpoint-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-string">/all_farms</span>
 </code></pre>
+
 <p><br>
 <strong>Method Type</strong></p>
 <blockquote>
@@ -208,7 +217,7 @@ This will query all farms created</p>
 
 </code></pre>
 <p><strong>Description:</strong>
-This will query all farms created indicating whether the user is following a farm or not</p>
+This will query all farms created whether open or closed</p>
 <p><br>
 <strong>Sample API Response</strong></p>
 <pre><code class="hljs">    {status: ‘success’, data: <span class="hljs-meta">[&lt;Farms returned in an array&gt;]</span>}
@@ -218,7 +227,9 @@ This will query all farms created indicating whether the user is following a far
 
 </code></pre>
 <p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="view-all-harvested-farms"></a><a href="#view-all-harvested-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View All Harvested Farms</h2>
+
+<!-- View all harvested farms -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="view-all-harvested-farms"></a><a href="#view-all-harvested-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View All Harvested Farms</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-2"></a><a href="#endpoint-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-string">/harvested_farms</span>
 </code></pre>
@@ -235,8 +246,10 @@ This will query all harvested farms</p>
 
     {status: ‘failure’, message: ‘error message from server’}
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="view-all-archived-farms"></a><a href="#view-all-archived-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View All Archived Farms</h2>
+<p><br></p> -->
+
+<!-- View All archived farms -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="view-all-archived-farms"></a><a href="#view-all-archived-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View All Archived Farms</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-3"></a><a href="#endpoint-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-string">/archived_farms</span>
 </code></pre>
@@ -254,8 +267,10 @@ This will query all archived farms</p>
     {status: ‘failure’, message: ‘error message from server’}
 
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="view-one-farm-unauthorized-users"></a><a href="#view-one-farm-unauthorized-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View One Farm (UNAUTHORIZED USERS)</h2>
+<p><br></p> -->
+
+<!-- View One Farm (UNAUTHORIZED USERS) -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="view-one-farm-unauthorized-users"></a><a href="#view-one-farm-unauthorized-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View One Farm (UNAUTHORIZED USERS)</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-4"></a><a href="#endpoint-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs">/<span class="hljs-built_in">find</span>?projectId=
 
@@ -280,8 +295,10 @@ This will query all farms created for a specific farm based on the id</p>
     {status: ‘failure’, message: ‘error message from server’}
 
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="view-one-farm-authorized-users"></a><a href="#view-one-farm-authorized-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View One Farm (AUTHORIZED USERS)</h2>
+<p><br></p> -->
+
+<!-- View One Farm (AUTHORIZED USERS) -->
+<h2><a class="anchor" aria-hidden="true" id="view-one-farm-authorized-users"></a><a href="#view-one-farm-authorized-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View One Farm</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-5"></a><a href="#endpoint-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-attr">/find_farm?projectId</span>=<span class="hljs-string">
 
@@ -314,7 +331,9 @@ This will query all farms created for a specific farm based on the id</p>
 
 </code></pre>
 <p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="follow-a-farm"></a><a href="#follow-a-farm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Follow a Farm</h2>
+
+<!-- Follow a Farm -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="follow-a-farm"></a><a href="#follow-a-farm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Follow a Farm</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-6"></a><a href="#endpoint-6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-string">/follow</span>
 
@@ -343,8 +362,10 @@ This endpoint is to enable users subscribe/follow a farm</p>
     {<span class="hljs-attribute">status</span>: ‘failure’, message: ‘&lt;error message from server&gt;’}
 
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="unfollow-a-farm"></a><a href="#unfollow-a-farm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unfollow a Farm</h2>
+<p><br></p> -->
+
+<!-- Unfollow a Farm -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="unfollow-a-farm"></a><a href="#unfollow-a-farm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unfollow a Farm</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-7"></a><a href="#endpoint-7" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-string">/unfollow</span>
 
@@ -373,8 +394,10 @@ This endpoint is to enable users unsubscribe/unfollow a farm</p>
     {<span class="hljs-attribute">status</span>: ‘failure’, message: ‘&lt;error message from server&gt;’}
 
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="find-a-user-funded-followed-farms"></a><a href="#find-a-user-funded-followed-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FIND A USER FUNDED &amp; FOLLOWED FARMS</h2>
+<p><br></p> -->
+
+<!-- FIND A USER FUNDED & FOLLOWED FARMS -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="find-a-user-funded-followed-farms"></a><a href="#find-a-user-funded-followed-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FIND A USER FUNDED &amp; FOLLOWED FARMS</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-8"></a><a href="#endpoint-8" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-regexp">/user/</span>funded_followed
 
@@ -403,8 +426,10 @@ This endpoint fetches all farms a user has followed and funded</p>
 
 
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="find-a-users-funded-farms"></a><a href="#find-a-users-funded-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FIND A USER'S FUNDED FARMS</h2>
+<p><br></p> -->
+
+<!-- FIND A USER'S FUNDED FARMS -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="find-a-users-funded-farms"></a><a href="#find-a-users-funded-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FIND A USER'S FUNDED FARMS</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-9"></a><a href="#endpoint-9" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs"><span class="hljs-regexp">/user/</span>funded
 
@@ -433,8 +458,11 @@ This endpoint fetches all farms a user has funded</p>
 
 
 </code></pre>
-<p><br></p>
-<h2><a class="anchor" aria-hidden="true" id="find-a-users-followed-farms"></a><a href="#find-a-users-followed-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FIND A USER'S FOLLOWED FARMS</h2>
+<p><br></p> -->
+
+
+<!-- FIND A USER'S FOLLOWED FARMS -->
+<!-- <h2><a class="anchor" aria-hidden="true" id="find-a-users-followed-farms"></a><a href="#find-a-users-followed-farms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FIND A USER'S FOLLOWED FARMS</h2>
 <h3><a class="anchor" aria-hidden="true" id="endpoint-10"></a><a href="#endpoint-10" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endpoint</h3>
 <pre><code class="hljs">/<span class="hljs-keyword">user</span>/<span class="hljs-keyword">following</span>
 
@@ -463,6 +491,56 @@ This endpoint fetches all farms a user has followed</p>
 
 
 ``` <span class="hljs-selector-tag">--</span>&gt;
-</code></pre>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/farms-api/docs/errors"><span class="arrow-prev">← </span><span>Errors</span></a><a class="docs-next button" href="/farms-api/docs/farmUpdates"><span>Farm Updates</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#staging-base-url">Staging Base URL</a><ul class="toc-headings"><li><a href="#sample-farm-tracking-schema">Sample Farm Tracking Schema</a></li><li><a href="#sample-farm-unique-id-generator-schema">Sample Farm Unique ID Generator Schema</a></li><li><a href="#test-endpoint">Test Endpoint</a></li></ul></li><li><a href="#view-all-open-farms">View All Open Farms</a><ul class="toc-headings"><li><a href="#endpoint">Endpoint</a></li></ul></li><li><a href="#view-all-farms-authorized-users">View All Farms (AUTHORIZED USERS)</a><ul class="toc-headings"><li><a href="#endpoint-1">Endpoint</a></li></ul></li><li><a href="#view-all-harvested-farms">View All Harvested Farms</a><ul class="toc-headings"><li><a href="#endpoint-2">Endpoint</a></li></ul></li><li><a href="#view-all-archived-farms">View All Archived Farms</a><ul class="toc-headings"><li><a href="#endpoint-3">Endpoint</a></li></ul></li><li><a href="#view-one-farm-unauthorized-users">View One Farm (UNAUTHORIZED USERS)</a><ul class="toc-headings"><li><a href="#endpoint-4">Endpoint</a></li></ul></li><li><a href="#view-one-farm-authorized-users">View One Farm (AUTHORIZED USERS)</a><ul class="toc-headings"><li><a href="#endpoint-5">Endpoint</a></li></ul></li><li><a href="#follow-a-farm">Follow a Farm</a><ul class="toc-headings"><li><a href="#endpoint-6">Endpoint</a></li></ul></li><li><a href="#unfollow-a-farm">Unfollow a Farm</a><ul class="toc-headings"><li><a href="#endpoint-7">Endpoint</a></li></ul></li><li><a href="#find-a-user-funded-followed-farms">FIND A USER FUNDED &amp; FOLLOWED FARMS</a><ul class="toc-headings"><li><a href="#endpoint-8">Endpoint</a></li></ul></li><li><a href="#find-a-users-funded-farms">FIND A USER'S FUNDED FARMS</a><ul class="toc-headings"><li><a href="#endpoint-9">Endpoint</a></li></ul></li><li><a href="#find-a-users-followed-farms">FIND A USER'S FOLLOWED FARMS</a><ul class="toc-headings"><li><a href="#endpoint-10">Endpoint</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="text-align:center"><div><h5>Docs</h5><a href="/farms-api/docs/en/introduction.html">Getting Started</a><a href="/farms-api/docs/en/how-to-start.html">Guides</a><a href="/farms-api/docs/en/farm.html">API Reference</a></div><div style="text-align:center"><h5>More</h5><a href="/farms-api/blog">Blog</a><a href="https://twitter.com/thriveagric" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://github.com/Prodigy00/farm-api">GitHub</a><a class="github-button" href="https://github.com/ThriveAgric/farms-api" data-icon="octicon-star" data-count-href="/Prodigy00/farm-api" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright" style="text-align:center"><span><a href="/farms-api/" class="nav-home"><img src="/farms-api/img/thrive.png" alt="Thrive Agric" width="66" height="58"/></a></span><div>Copyright © 2019 Thrive Agric</div></section></footer></div></body></html>
+</code></pre> -->
+</span>
+</div>
+</article>
+</div>
+<div class="docs-prevnext">
+  <a class="docs-prev button" href="errors.html"><span class="arrow-prev">← </span><span>Errors</span></a>
+  <a class="docs-next button" href="farmUpdates.html"><span>Farm Updates</span><span class="arrow-next"> →</span></a>
+</div></div></div>
+<nav class="onPageNav">
+  <ul class="toc-headings">
+    <li><a href="#staging-base-url">Staging Base URL</a><ul class="toc-headings">
+    <li><a href="#sample-farm-tracking-schema">Sample Farm Tracking Schema</a></li>
+    <li><a href="#sample-farm-unique-id-generator-schema">Sample Farm Unique ID Generator Schema</a></li>
+    <li><a href="#test-endpoint">Test Endpoint</a></li></ul></li>
+    <li><a href="#view-all-open-farms">View All Open Farms</a><ul class="toc-headings">
+    <li><a href="#endpoint">Endpoint</a></li></ul></li>
+    <li><a href="#view-all-farms-authorized-users">View All Farms (OPEN AND CLOSED)</a><ul class="toc-headings">
+    <li><a href="#endpoint-1">Endpoint</a></li></ul></li>
+    <!-- <li><a href="#view-all-harvested-farms">View All Harvested Farms</a><ul class="toc-headings"><li><a href="#endpoint-2">Endpoint</a></li></ul></li> -->
+    <!-- <li><a href="#view-all-archived-farms">View All Archived Farms</a><ul class="toc-headings"><li><a href="#endpoint-3">Endpoint</a></li></ul></li> -->
+    <!-- <li><a href="#view-one-farm-unauthorized-users">View One Farm (UNAUTHORIZED USERS)</a><ul class="toc-headings"><li><a href="#endpoint-4">Endpoint</a></li></ul></li> -->
+    <li><a href="#view-one-farm-authorized-users">View One Farm</a><ul class="toc-headings"><li><a href="#endpoint-5">Endpoint</a></li></ul></li>
+    <!-- <li><a href="#follow-a-farm">Follow a Farm</a><ul class="toc-headings"><li><a href="#endpoint-6">Endpoint</a></li></ul></li> -->
+    <!-- <li><a href="#unfollow-a-farm">Unfollow a Farm</a><ul class="toc-headings"><li><a href="#endpoint-7">Endpoint</a></li></ul></li> -->
+    <!-- <li><a href="#find-a-user-funded-followed-farms">FIND A USER FUNDED &amp; FOLLOWED FARMS</a><ul class="toc-headings"><li><a href="#endpoint-8">Endpoint</a></li></ul></li> -->
+    <!-- <li><a href="#find-a-users-funded-farms">FIND A USER'S FUNDED FARMS</a><ul class="toc-headings"><li><a href="#endpoint-9">Endpoint</a></li></ul></li> -->
+    <li><a href="#find-a-users-followed-farms">
+      <!-- FIND A USER'S FOLLOWED FARMS -->
+    </a><ul class="toc-headings"><li><a href="#endpoint-10">
+      <!-- Endpoint -->
+    </a></li></ul></li></ul></nav></div>
+    <footer class="nav-footer" id="footer">
+      <section class="sitemap" style="text-align:center">
+        <div><h5>Docs</h5><a href="introduction.html">Getting Started</a>
+          <a href="how-to-start.html">Guides</a><a href="farm.html">API Reference</a>
+        </div>
+        <div style="text-align:center"><h5>More</h5><a href="https://medium.com/@thriveagric">Blog</a>
+        <a href="https://twitter.com/thriveagric" target="_blank" rel="noreferrer noopener">Twitter</a>
+        <a href="https://github.com/ThriveAgric/farm-api">GitHub</a>
+        <a class="github-button" href="https://github.com/ThriveAgric/farm-api" data-icon="octicon-star" data-count-href="/ThriveAgric/farm-api" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star
+        </a>
+      </div>
+    </section>
+    <section class="copyright" style="text-align:center">
+      <span><a href="../index.html" class="nav-home"><img src="../img/thrive.png" alt="Thrive Agric" width="66" height="58"/></a></span>
+      <div>Copyright © 2019 Thrive Agric</div>
+    </section>
+  </footer>
+</div>
+</body>
+</html>
 
